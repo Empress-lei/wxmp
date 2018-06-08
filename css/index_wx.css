@@ -2678,6 +2678,14 @@
   color: #333;
   line-height: 0.66666667rem;
 }
+.warp_wx .perfect_page .perfect_div .mess_li .mess_per .length {
+  color: #999999;
+  font-size: 12px;
+  line-height: 17px;
+}
+.warp_wx .perfect_page .perfect_div .mess_li .mess_per .length span {
+  color: #FD530B;
+}
 .warp_wx .perfect_page .perfect_div .mess_li .mess_per .title_pa {
   padding-top: 0.21333333rem;
 }
@@ -2790,6 +2798,21 @@
   color: #333;
   font-size: 0.37333333rem;
   line-height: 0.53333333rem;
+}
+.warp_wx .perfect_page .perfect_div .mess_li .mess_per .render_address {
+  width: 100%;
+  padding: 0.21333333rem;
+  min-height: 2.66666667rem;
+  background-color: #EEEEEE;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+.warp_wx .perfect_page .perfect_div .mess_li .mess_per .render_address .render_intr {
+  width: 100%;
+  height: auto;
 }
 .warp_wx .perfect_page .perfect_div .none_bor {
   padding: 0.53333333rem 0 0;

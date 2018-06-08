@@ -100,14 +100,25 @@
                     </select>
                 </div>
             </li>
-            <li class="mess_li none_bor">
+            <li class="mess_li">
                 <div class="mess_per clearfix">
-                    <h3 class="fl title_left">活动地址:</h3>
+                    <h3 class="fl title_left">园所信息:</h3>
                     <div class="mess_address fl">
                         <!--获取到地址返回来之后   给p加类名curP-->
                         <!--<input type="text">-->
                         <textarea name="" class="sele_add"  placeholder="请输入活动地址"></textarea>
                         <!--<p></p>-->
+                    </div>
+                </div>
+            </li>
+            <li class="mess_li none_bor">
+                <div class="mess_per clearfix">
+                    <div class="clearfix">
+                        <h3 class="fl title_left">园所信息:</h3>
+                        <p class="length fr"><span>0</span>/500</p>
+                    </div>
+                    <div class="render_address fl">
+                        <textarea class="render_intr"onkeyup="fn()" onblur="fn()" onfocus=$(this).autoHeight(); maxlength="500"placeholder="请添加园所特色"></textarea>
                     </div>
                 </div>
             </li>
@@ -130,6 +141,22 @@
 <script src="../js/jquery.date.js"></script>
 <script src="../js/areaAuto.js"></script>
 <script>
+
+    //记录文本框中的字数
+    function fn() {
+        var len = $(".render_intr").val().length;
+        $(".length span").text(len);
+    }
+    function vfn() {
+        var len = $(".render_intr").val().length;
+        if(len < 10) {
+            toast("至少输入10个字符");
+            return false;
+        }
+    }
+
+
+
     $(function() {
         $('.filter-box').click(function () {
             $(".filter-list").show();
