@@ -3,9 +3,6 @@
  */
 window.onload = function () {
 
-
-
-
     $(".find_nav_list").css("left",0);
 
     $(".find_nav_list li").each(function(){

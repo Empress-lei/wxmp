@@ -276,6 +276,7 @@
   margin-left: -0.26666667rem;
 }
 .prompt_page {
+  display: none;
   width: 100%;
   max-width: 540px;
   margin: 0 auto;

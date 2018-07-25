@@ -35,18 +35,13 @@
                 <span>现场准备</span></div>
             <div class="swiper-slide">
                 <span>现场流程</span></div>
-            <div class="swiper-slide">
-                <span>总结</span></div>
-            <div class="bar">
-                <div class="color"></div>
-            </div>
         </div>
     </div>
 </div>
 <div class="swiper-container" id="page">
     <div class="swiper-wrapper">
         <div class="swiper-slide slidepage">
-            <div class="swiper-container scroll">
+            <div class="swiper-container scroll" id="scroll-v1">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slidescroll">
                         <div class="guid_li">
@@ -101,7 +96,7 @@
             </div>
         </div>
         <div class="swiper-slide slidepage">
-            <div class="swiper-container scroll">
+            <div class="swiper-container scroll" id="scroll-v2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slidescroll">
                         <div class="guid_li">
@@ -178,7 +173,7 @@
             </div>
         </div>
         <div class="swiper-slide slidepage">
-            <div class="swiper-container scroll">
+            <div class="swiper-container scroll" id="scroll-v3">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slidescroll">
                         <div class="guid_li">
@@ -224,7 +219,7 @@
             </div>
         </div>
         <div class="swiper-slide slidepage">
-            <div class="swiper-container scroll">
+            <div class="swiper-container scroll" id="scroll-v4">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slidescroll">
                         <div class="guid_li">
@@ -292,7 +287,7 @@
             </div>
         </div>
         <div class="swiper-slide slidepage">
-            <div class="swiper-container scroll">
+            <div class="swiper-container scroll" id="scroll-v5">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slidescroll">
                         <div class="guid_li">
@@ -417,53 +412,6 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-slide slidepage">
-            <div class="swiper-container scroll">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slidescroll">
-                        <div class="guid_li">
-                            <div class="intr_div">
-                                <div class="intr_tit clearfix">
-                                    <span class="fl line_sp"></span>
-                                    <h3 class="fl title_h">我的小手真能干:</h3>
-                                </div>
-                                <div class="intr_text">
-                                    <p>
-                                        教育咨询顾问上场主持接下来环节： <br>
-                                        各位小朋友和家长们是不是在XXX幼儿园里度过了一个愉快的上午，小朋友们记住了老师的名字了吗？依次引导幼儿说出老师的名字，表扬幼儿。 <br>
-                                        接下来介绍幼儿园园长 <br><br>
-                                        1.园长对本次活动总结，并说明幼儿园的特色 园长发言： 欢迎小朋友和家长来到幼儿园，和老师一起度过了快乐而丰富的时。在这段时光中，小朋友和家长通过教育教学、户外活动、如厕盥洗、进餐加点、自由活动这几个环节，感受了幼儿园到底在做了什么，这几个环节基本是小朋友上幼儿的半天缩影。这是一次社会领域内的教学活动，” 课程介绍：小手真能干“惯穿了整个活动，孩子们通过快乐的游戏交往，主动探索操作，户外锻炼，更加深刻的理解小手的能干。这一切都源于教师对孩子年龄特点的把握，创设符合幼儿的游戏空间，让孩子在快乐中体验和收获。同时这次体验活动增强了亲子互动，让孩子从小感受爱，让家长收获爱。希望孩子在入园后，家长也能积极主动参加我们幼儿园举办的亲子活动，陪伴孩子快乐成长。 幼儿园理念：***** <br><br>
-                                        2.教育咨询顾问介绍园所收费标准和优惠政策 <br><br>
-                                        3.幼儿吃完餐点后进入自选区域游戏，每区域一位老师陪幼儿游戏，并为家长讲解游戏中能够发展幼儿什么样的能力及拓展。 <br><br>
-                                        4.教育咨询组老师，针对家长报名问题，进行一对一咨询沟通，转化幼儿报名
-
-                                    </p>
-                                    <p class="point">
-                                        关键点：话术统一 家长常见问题话术整理并提前学习
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="intr_div">
-                                <div class="intr_tit clearfix">
-                                    <span class="fl line_sp"></span>
-                                    <h3 class="fl title_h">总结：</h3>
-                                </div>
-                                <div class="intr_text">
-                                    <p>
-                                        复盘： 活动目标（邀约人数、参加人数、转化率、意向家长）<br>
-                                        活动效果（幼儿参与活动情况、家长互动、教师互相配合、话术介绍是否清晰、家长是否有新的需求和疑问、与家长沟通是否到位） <br>
-                                        活动改进（下一次活动注意事项，罗列出来，将所有整理入话术手册，便于下次活动使用）<br><br>
-                                        复盘要求： 每个教师都要发言，总结本次活动的优点和不足。
-
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -566,7 +514,319 @@
     })
 
     //内容滚动
-    var scrollSwiper = new Swiper('.scroll', {
+    var scrollSwiper = new Swiper('#scroll-v1', {
+        //65是头部的高
+        //36是top地址和搜索的高
+
+        slidesOffsetBefore: 72,
+        direction: 'vertical',
+        freeMode: true,
+        slidesPerView: 'auto',
+
+        mousewheel: {
+            releaseOnEdges: true,
+        },
+        on: {
+            touchMove: function () {
+
+                if (this.translate > 72 - 36 && this.translate < 72) {
+                    topBar.transform('translateY(' + (this.translate - 72) + 'px)');
+                }
+
+            },
+            touchStart: function () {
+                startPosition = this.translate
+            },
+            touchEnd: function () {
+                console.log("----touchEnd-----")
+                topBar.transition(tSpeed)
+                $('#page').animate({scrollTop: 0},10);
+                if (this.translate > 36 && this.translate < 72 && this.translate < startPosition) {
+                    topBar.transform('translateY(-36px)');
+                    for (sc = 0; sc < scrollSwiper.length; sc++) {
+                        if (scrollSwiper[sc].translate > 36) {
+                            scrollSwiper[sc].setTransition(tSpeed);
+                            scrollSwiper[sc].setTranslate(36)
+                        }
+                    }
+                }
+                if (this.translate > 36 && this.translate < 72 && this.translate > startPosition) {
+                    topBar.transform('translateY(0px)');
+                    for (sc = 0; sc < scrollSwiper.length; sc++) {
+                        if (scrollSwiper[sc].translate < 72 && scrollSwiper[sc].translate > 0) {
+                            scrollSwiper[sc].setTransition(tSpeed);
+                            scrollSwiper[sc].setTranslate(72)
+                        }
+                    }
+                }
+            },
+
+            transitionStart: function () {
+
+                topBar.transition(tSpeed)
+                if (this.translate < 72 - 36) {
+                    topBar.transform('translateY(-36px)');
+                    if (scrollSwiper) {
+                        for (sc = 0; sc < scrollSwiper.length; sc++) {
+                            if (scrollSwiper[sc].translate > 36) {
+                                scrollSwiper[sc].setTransition(tSpeed);
+                                scrollSwiper[sc].setTranslate(36)
+                            }
+                        }
+                    }
+
+                } else {
+                    topBar.transform('translateY(0px)');
+
+                    if (scrollSwiper) {
+                        for (sc = 0; sc < scrollSwiper.length; sc++) {
+                            if (scrollSwiper[sc].translate < 72 && scrollSwiper[sc].translate > 0) {
+                                scrollSwiper[sc].setTransition(tSpeed);
+                                scrollSwiper[sc].setTranslate(72)
+                            }
+                        }
+                    }
+                }
+            },
+        }
+
+    })
+    //内容滚动
+    var scrollSwiper = new Swiper('#scroll-v2', {
+        //65是头部的高
+        //36是top地址和搜索的高
+
+        slidesOffsetBefore: 72,
+        direction: 'vertical',
+        freeMode: true,
+        slidesPerView: 'auto',
+
+        mousewheel: {
+            releaseOnEdges: true,
+        },
+        on: {
+            touchMove: function () {
+
+                if (this.translate > 72 - 36 && this.translate < 72) {
+                    topBar.transform('translateY(' + (this.translate - 72) + 'px)');
+                }
+
+            },
+            touchStart: function () {
+                startPosition = this.translate
+            },
+            touchEnd: function () {
+                console.log("----touchEnd-----")
+                topBar.transition(tSpeed)
+                $('#page').animate({scrollTop: 0},10);
+                if (this.translate > 36 && this.translate < 72 && this.translate < startPosition) {
+                    topBar.transform('translateY(-36px)');
+                    for (sc = 0; sc < scrollSwiper.length; sc++) {
+                        if (scrollSwiper[sc].translate > 36) {
+                            scrollSwiper[sc].setTransition(tSpeed);
+                            scrollSwiper[sc].setTranslate(36)
+                        }
+                    }
+                }
+                if (this.translate > 36 && this.translate < 72 && this.translate > startPosition) {
+                    topBar.transform('translateY(0px)');
+                    for (sc = 0; sc < scrollSwiper.length; sc++) {
+                        if (scrollSwiper[sc].translate < 72 && scrollSwiper[sc].translate > 0) {
+                            scrollSwiper[sc].setTransition(tSpeed);
+                            scrollSwiper[sc].setTranslate(72)
+                        }
+                    }
+                }
+            },
+
+            transitionStart: function () {
+
+                topBar.transition(tSpeed)
+                if (this.translate < 72 - 36) {
+                    topBar.transform('translateY(-36px)');
+                    if (scrollSwiper) {
+                        for (sc = 0; sc < scrollSwiper.length; sc++) {
+                            if (scrollSwiper[sc].translate > 36) {
+                                scrollSwiper[sc].setTransition(tSpeed);
+                                scrollSwiper[sc].setTranslate(36)
+                            }
+                        }
+                    }
+
+                } else {
+                    topBar.transform('translateY(0px)');
+
+                    if (scrollSwiper) {
+                        for (sc = 0; sc < scrollSwiper.length; sc++) {
+                            if (scrollSwiper[sc].translate < 72 && scrollSwiper[sc].translate > 0) {
+                                scrollSwiper[sc].setTransition(tSpeed);
+                                scrollSwiper[sc].setTranslate(72)
+                            }
+                        }
+                    }
+                }
+            },
+        }
+
+    })
+    //内容滚动
+    var scrollSwiper = new Swiper('#scroll-v3', {
+        //65是头部的高
+        //36是top地址和搜索的高
+
+        slidesOffsetBefore: 72,
+        direction: 'vertical',
+        freeMode: true,
+        slidesPerView: 'auto',
+
+        mousewheel: {
+            releaseOnEdges: true,
+        },
+        on: {
+            touchMove: function () {
+
+                if (this.translate > 72 - 36 && this.translate < 72) {
+                    topBar.transform('translateY(' + (this.translate - 72) + 'px)');
+                }
+
+            },
+            touchStart: function () {
+                startPosition = this.translate
+            },
+            touchEnd: function () {
+                console.log("----touchEnd-----")
+                topBar.transition(tSpeed)
+                $('#page').animate({scrollTop: 0},10);
+                if (this.translate > 36 && this.translate < 72 && this.translate < startPosition) {
+                    topBar.transform('translateY(-36px)');
+                    for (sc = 0; sc < scrollSwiper.length; sc++) {
+                        if (scrollSwiper[sc].translate > 36) {
+                            scrollSwiper[sc].setTransition(tSpeed);
+                            scrollSwiper[sc].setTranslate(36)
+                        }
+                    }
+                }
+                if (this.translate > 36 && this.translate < 72 && this.translate > startPosition) {
+                    topBar.transform('translateY(0px)');
+                    for (sc = 0; sc < scrollSwiper.length; sc++) {
+                        if (scrollSwiper[sc].translate < 72 && scrollSwiper[sc].translate > 0) {
+                            scrollSwiper[sc].setTransition(tSpeed);
+                            scrollSwiper[sc].setTranslate(72)
+                        }
+                    }
+                }
+            },
+
+            transitionStart: function () {
+
+                topBar.transition(tSpeed)
+                if (this.translate < 72 - 36) {
+                    topBar.transform('translateY(-36px)');
+                    if (scrollSwiper) {
+                        for (sc = 0; sc < scrollSwiper.length; sc++) {
+                            if (scrollSwiper[sc].translate > 36) {
+                                scrollSwiper[sc].setTransition(tSpeed);
+                                scrollSwiper[sc].setTranslate(36)
+                            }
+                        }
+                    }
+
+                } else {
+                    topBar.transform('translateY(0px)');
+
+                    if (scrollSwiper) {
+                        for (sc = 0; sc < scrollSwiper.length; sc++) {
+                            if (scrollSwiper[sc].translate < 72 && scrollSwiper[sc].translate > 0) {
+                                scrollSwiper[sc].setTransition(tSpeed);
+                                scrollSwiper[sc].setTranslate(72)
+                            }
+                        }
+                    }
+                }
+            },
+        }
+
+    })
+    //内容滚动
+    var scrollSwiper = new Swiper('#scroll-v4', {
+        //65是头部的高
+        //36是top地址和搜索的高
+
+        slidesOffsetBefore: 72,
+        direction: 'vertical',
+        freeMode: true,
+        slidesPerView: 'auto',
+
+        mousewheel: {
+            releaseOnEdges: true,
+        },
+        on: {
+            touchMove: function () {
+
+                if (this.translate > 72 - 36 && this.translate < 72) {
+                    topBar.transform('translateY(' + (this.translate - 72) + 'px)');
+                }
+
+            },
+            touchStart: function () {
+                startPosition = this.translate
+            },
+            touchEnd: function () {
+                console.log("----touchEnd-----")
+                topBar.transition(tSpeed)
+                $('#page').animate({scrollTop: 0},10);
+                if (this.translate > 36 && this.translate < 72 && this.translate < startPosition) {
+                    topBar.transform('translateY(-36px)');
+                    for (sc = 0; sc < scrollSwiper.length; sc++) {
+                        if (scrollSwiper[sc].translate > 36) {
+                            scrollSwiper[sc].setTransition(tSpeed);
+                            scrollSwiper[sc].setTranslate(36)
+                        }
+                    }
+                }
+                if (this.translate > 36 && this.translate < 72 && this.translate > startPosition) {
+                    topBar.transform('translateY(0px)');
+                    for (sc = 0; sc < scrollSwiper.length; sc++) {
+                        if (scrollSwiper[sc].translate < 72 && scrollSwiper[sc].translate > 0) {
+                            scrollSwiper[sc].setTransition(tSpeed);
+                            scrollSwiper[sc].setTranslate(72)
+                        }
+                    }
+                }
+            },
+
+            transitionStart: function () {
+
+                topBar.transition(tSpeed)
+                if (this.translate < 72 - 36) {
+                    topBar.transform('translateY(-36px)');
+                    if (scrollSwiper) {
+                        for (sc = 0; sc < scrollSwiper.length; sc++) {
+                            if (scrollSwiper[sc].translate > 36) {
+                                scrollSwiper[sc].setTransition(tSpeed);
+                                scrollSwiper[sc].setTranslate(36)
+                            }
+                        }
+                    }
+
+                } else {
+                    topBar.transform('translateY(0px)');
+
+                    if (scrollSwiper) {
+                        for (sc = 0; sc < scrollSwiper.length; sc++) {
+                            if (scrollSwiper[sc].translate < 72 && scrollSwiper[sc].translate > 0) {
+                                scrollSwiper[sc].setTransition(tSpeed);
+                                scrollSwiper[sc].setTranslate(72)
+                            }
+                        }
+                    }
+                }
+            },
+        }
+
+    })
+    //内容滚动
+    var scrollSwiper = new Swiper('#scroll-v5', {
         //65是头部的高
         //36是top地址和搜索的高
 
